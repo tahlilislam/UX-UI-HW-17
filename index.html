@@ -15,7 +15,7 @@
     </head>
     <body>
     <!--NAVIGATION SECTION-->
-        <nav>
+        <nav class="navigation">
             <img src="Images/Group 3.png">
             <ul>
                 <li>Portfolio</li>
@@ -25,44 +25,70 @@
             </ul>
         </nav>
     <!---HERO SECTION-->
-        <section class="heroImg">
-            <h1>Hey There! I'm Tahlil</h1>
-            <p>A UX/ UI designer who loves designing to solve problems and understand human behavior</p>
-            <button>See My Work</button>
-            <br>
-            <br>
-            <img src = "Images/Group 106.png" >
-        </section>
-    <!--CASE STUDY LIST SECTION--> 
-        <section>
-            <hr>
-            <h2>My Work</h2>
-            <div class="r2kCaseStudy1">
-                <img src="Images/Group 92.png">
-                <div>
-                    <h3>Reading to Kids</h3>
-                    <p>LLorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra, neque ut eu phasellus enim in. Bibendum risus ut ultrices sit risus mi. Tellus pharetra sit quam risus. Dolor sodales aliquet in nibh orci, leo faucibus quis cursus.</p>
+        <section class="heroSection">
+
+            <div class="heroText">
+                <h1>Hey There! 
+                <span> I'm Tahlil </span> </h1>
+                <p>A UX/ UI designer who loves designing to solve problems and understand human behavior</p>
+                <div class="CTA">
+                    <button>See My Work</button>
                 </div>
             </div>
-            <div class="bigSisCaseStudy2">
-                <img src="Images/Group 93.png">
-                <div>
-                    <h3>Big Sister Finder</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra, neque ut eu phasellus enim in. Bibendum risus ut ultrices sit risus mi. Tellus pharetra sit quam risus. Dolor sodales aliquet in nibh orci, leo faucibus quis cursus.</p>
+            <br>
+            <br>
+            <div class=heroImg> 
+                <img src = "Images/Group 106.png" id="heroImg">
+
+            </div>
+            <!--<div id="heroBackground"> <img src = "Images/Group 1.png"></div>-->
+        </section>
+    <!--CASE STUDY LIST SECTION--> 
+        <section class="Case-Study-List flexbox-containejr">
+            <hr>
+            <h2>My Work</h2>
+            <div class="grid-CaseStudy1 grid-container">
+                <div class="grid-item-1">
+                    <div class="Case1Image">
+                        <img src="Images/Group 92.png">
+                    </div>  
+                    <div class="caseStudy1-Description">
+                        <h3>Reading to Kids</h3>
+                        <p>LLorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra, neque ut eu phasellus enim in. Bibendum risus ut ultrices sit risus mi. Tellus pharetra sit quam risus. Dolor sodales aliquet in nibh orci, leo faucibus quis cursus.</p>
+                        <div class="Case-Study-Buttons">
+                            <button>View Case Study</button>
+                        </div>  
+                    </div>     
                 </div>
+                <div class="grid-item-2">
+                    <div class="Case2Image">
+                        <img src="Images/Group 93.png">
+                    </div>
+                    <div class="caseStudy2-Description">
+                        <h3>Big Sister Finder</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra, neque ut eu phasellus enim in. Bibendum risus ut ultrices sit risus mi. Tellus pharetra sit quam risus. Dolor sodales aliquet in nibh orci, leo faucibus quis cursus.</p>
+                        <div class="Case-Study-Buttons">
+                            <button>View Case Study</button>
+                        </div> 
+                    </div>
+                </div>
+            </div>
             </div>
         </section>  
         <Footer>
             <div class="footer">
-                <h2>Let's Connect</h2>
-                <h2>tahlilislam@gmail.com</h2>
-                <span>
-                    <ul>
-                        <li> <img src="Images/clarity_email-line.png" alt="Email me" width="47.67"></li>
+                <div>
+                    <h3>Let's Connect</h3>
+                    <h4>tahlilislam@gmail.com</h4>
+                </div>
+                <div class="footerSocial">
+                    <ul >
+                        <li> <img src="Images/clarity_email-line.png" alt="Email me" ></li>
                         <li> <img src="Images/bx_phone-call.png" alt="Call me"></li>
                         <li> <img src="Images/akar-icons_linkedin-fill.png" alt="Linkedin"></li>
                     </ul>
-                </span>
+                    <div>Copyright © Tahlil Islam</div>
+                </div>
             </div>
         </Footer>
     </body>
