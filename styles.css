@@ -1,24 +1,200 @@
 *{
-    box-sizing: border-box;
-    background: #FAF5F4;
-    
+    box-sizing: border-box;    
+}
+/*Custom Properties*/
+
+:root {
+    --ff-primary: 'brandon-grotesque', sans-serif;
+    --ff-secondary: 'Bodoni Moda', serif;
+
+    --fw-reg: 400;
+    --fw-med: 500; 
+    --fw-bold: 700;
+
+    --main-bg-color: #FAF5F4;
+    --footer-color: #7A836E;
+
+    --fs-h1: 3.75rem; /*60px*/
+    --fs-h2: 2.25rem; /*36px*/
+    --fs-h3: 2rem; /*32px*/
+    --fs-h4: 1.75rem; /*28px*/
+    --fs-body: 1.25rem; /*20px*/
 }
 
 body {
-    font-family: 'Bodoni Moda', serif;
-    font-family: brandon-grotesque, sans-serif;
+   background: var(--main-bg-color);
+   color: black;
+   margin: 0;
+
+   font-family: var(--ff-primary);
+   line-height: 1.6;
+   letter-spacing:0.03em;
+   font-weight: var(--fw-reg);
+
+  /* padding: 1.5em 4.375em;/*is this how i do margins*/
 
 }
 
-.nav ul {
-    display: flex;
-    font-family: 'Bodoni Moda', serif;
+section {
+    padding: 1.5em 3.375em;
+}
+
+/* so that images dont grow bigger and overflow parent container*/
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/*Typography-----*/
+
+h1, h2, h3, h4 {
+    line-height: 1.1;
+    margin:0; /*might need to revisit later*/
+}
+
+h1 { 
+    font-size: var(--fs-h1);
+    font-weight: var(--fw-med);
+    font-family: var(--ff-secondary);
+}
+
+h2 { 
+    font-size: var(--fs-h2);
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-reg);
+}
+h3 { 
+    font-size: var(--fs-h3);
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-bold);
+}
+
+h4 { 
+    font-size: var(--fs-h4);
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-bold);
+}
+
+
+
+
+/*-----Typography*/
+
+
+.ul {
+list-style: none;
+}
+
+
+.navigation li {
+    display: inline-block;
+    font-family: var(--ff-secondary);
     font-size: 28px;
     font-weight: 400;
+    padding: 5px;
 }
+
+
+/*.CTA 
+{
+    display: flex;
+    justify-content: start;
+}*/
+
+button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+
+/*.flexbox-container {
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+/*.flebox-item{
+    width: 200px;
+    margin: 10 px;
+}*/
+
+#heroImg {
+    
+   /* position: relative;*/
+   
+    
+}
+.heroImg {
+    /*width: 500px;*/
+    background-color: black;
+    background-image: url("Images/Group\ 1.png");
+    background-repeat: no-repeat;
+    background-size: %;
+    padding-left: 
+    
+}
+
+
+.grid-container {
+    display: grid;
+    grid-gap: 5em;
+    /*grid-template-columns: repeat();*/
+
+}
+
+.grid-item-1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2em;
+    padding-top: 1.5em;
+
+}
+
+.grid-item-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2em;
+    padding-bottom: 5em;
+
+}
+.footer ul {
+    list-style: none;
+}    
 .footer {
-    background:#7A836E;
+    padding: 1.5em;
+    font-family: var(--ff-primary);
+    line-height: 1;
+    color: white;
+    background-color: var(--footer-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-.footer span{
-    display: inline-block;
+
+.footerSocial ul
+{
+    
+    /background-color: black;
+   /* padding-top: 10px;
+    padding-bottom: px;*/
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.footerSocial{
+    text-align: right;
+    padding: 1.5em;
+}
+
+.footerSocial li {
+ padding: 5%;
+ text-align: right;
+
+
+
+
 }
