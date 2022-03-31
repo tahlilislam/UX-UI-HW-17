@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <header>
             <title>Tahlil's Islam's UX Portfolio</title>
             <meta name="description" content="A UX/ UI designer who loves designing to solve problems and understand human behavior">
             <link rel="stylesheet" href="styles.css">
@@ -10,30 +9,47 @@
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://use.typekit.net/fhq3gla.css">
 
-            
-        </header> 
     </head>
     <body>
     <!--NAVIGATION SECTION-->
+        <header>
         <nav class="navigation">
-            <img src="Images/Group 3.png">
-            <ul>
-                <li>Portfolio</li>
-                <li>About</li>
-                <li>Resume</li>
-                <li>Contact</li>
-            </ul>
+            <img src="Images/Group 3.png " id="logo">
+            <button class="nav-toggle" aria-label="toggle navigitaion">
+                <span class="hamburger"></span>
+            </button>
+            <div class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"> <a href="#" class="nav-link"> Portfolio</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> Resume</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> Contact</a></li>
+                </ul>
+            </div>
+        </header>
         </nav>
     <!---HERO SECTION-->
         <section class="heroSection">
 
             <div class="heroContainer">
+<<<<<<< Updated upstream
                 <div class="heroText heroLeft">
                     <h1>Hey There! 
                     <span> I'm Tahlil </span> </h1>
                     <p>A UX/ UI designer who loves designing to solve problems and understand human behavior</p>
                     <div class="CTA">
                         <button>See My Work</button>
+=======
+                <div class="heroText">
+                    <div>
+                        <h1>Hey There! 
+                        <span> I'm Tahlil </span> </h1>
+                        <p class="heroTagline">A UX/ UI designer who loves designing to solve problems and understand human behavior</p>
+                        <div class="CTA">
+                            <a href="#caseStudySection" class="button"> See My Work</a>
+                            <!--<button > See My Work</button>-->
+                        </div>
+>>>>>>> Stashed changes
                     </div>
                 </div>
                 <div class="imageContainer">
@@ -48,7 +64,7 @@
             <!--<div id="heroBackground"> <img src = "Images/Group 1.png"></div>-->
         </section>
     <!--CASE STUDY LIST SECTION /// My Work Section Constructed using CSS grid--> 
-        <section class="Case-Study-List flexbox-containejr">
+        <section class="Case-Study-List flexbox-container" id="caseStudySection">
             <hr>
             <h2>My Work</h2>
             <div class="grid-CaseStudy1 grid-container">
@@ -60,7 +76,7 @@
                         <h3>Reading to Kids</h3>
                         <p>LLorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra, neque ut eu phasellus enim in. Bibendum risus ut ultrices sit risus mi. Tellus pharetra sit quam risus. Dolor sodales aliquet in nibh orci, leo faucibus quis cursus.</p>
                         <div class="Case-Study-Buttons">
-                            <button>View Case Study</button>
+                            <button class="caseStudyButton">View Case Study</button>
                         </div>  
                     </div>     
                 </div>
@@ -72,7 +88,7 @@
                         <h3>Big Sister Finder</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra, neque ut eu phasellus enim in. Bibendum risus ut ultrices sit risus mi. Tellus pharetra sit quam risus. Dolor sodales aliquet in nibh orci, leo faucibus quis cursus.</p>
                         <div class="Case-Study-Buttons">
-                            <button>View Case Study</button>
+                            <button class="caseStudyButton">View Case Study</button>
                         </div> 
                     </div>
                 </div>
@@ -95,6 +111,11 @@
                 </div>
             </div>
         </Footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+        </script>
+
+        <script src ="index.js"></script>
     </body>
    
 </html>

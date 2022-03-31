@@ -3,6 +3,10 @@
 }
 /*Custom Properties*/
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --ff-primary: 'brandon-grotesque', sans-serif;
     --ff-secondary: 'Bodoni Moda', serif;
@@ -76,16 +80,23 @@ h4 {
     font-weight: var(--fw-bold);
 }
 
+p { 
+    font-size: var(--fs-body);
+}
 
 
 
 /*-----Typography*/
 
-
-.ul {
-list-style: none;
+#logo { 
+    /*padding-left: 1.5rem;
+    padding-top: 1rem;*/
+    max-width: 100px;
+    align-self: center;
 }
+ 
 
+<<<<<<< Updated upstream
 
 .navigation li {
     display: inline-block;
@@ -95,6 +106,42 @@ list-style: none;
     padding: 5px;
 }
 
+=======
+ 
+.heroContainer{
+    display: grid;
+    column-gap: 4em;
+    /*grid-template-columns: repeat(auto-fit, minmax(1000px, 1fr));*/
+    justify-content: space-between;
+    grid-template-areas: 
+    "hero text" "hero text" "hero Img";
+    grid-template-columns: 1.5fr max-content;
+    
+    
+}
+
+.heroImgContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /*grid-row: -3/1;
+    position: relative;
+    bottom: 10%;*/
+    grid-row: ;
+    padding-right: 3em;
+    border: 2px solid #7A836E;
+    border-color: rgba(122, 131, 110, 0.6);
+    border-radius: 1500px 1500px 0px 0px;
+    padding: 15em 0em  0em 3em;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+#heroImg{
+    align-self: center;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 20px;
+>>>>>>> Stashed changes
 
 /*.CTA 
 {
@@ -121,6 +168,7 @@ button {
     margin: 10 px;
 }*/
 
+<<<<<<< Updated upstream
 .heroSection {
     min-height: 100vh;
     width: 100%;
@@ -166,6 +214,89 @@ button {
     background-position-x: right;
     background-position: 20%
     background-size: 200%;*/
+=======
+.heroText {
+    padding: 1em;
+    line-height: 2.0;
+   
+}
+
+.CTA {
+    padding-top: 8%;
+    text-indent: 12px;
+    text-align: start;
+}
+
+.heroTagline {
+    padding-left: 12px;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    
+  
+
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    align-items: space-evenly;
+    margin: 0;
+    padding: 0.2em;
+    
+
+}
+
+.nav-link {
+    color: inherit;
+    /*font-family: var(--ff-secondary);
+   font-size: 28px;
+   font-weight: 400;*/
+   text-decoration: none;
+}
+.nav-toggle {
+    display: none;
+    
+}
+
+.navigation li {
+    
+    font-family: var(--ff-secondary);
+    font-size: 28px;
+    font-weight: 400;
+    padding: 0.2em;
+    padding-right: 1em;
+    position: relative;
+    z-index: 10;
+
+
+
+}
+
+.caseStudyButton {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    margin-top: 2em;
+}
+
+.heroText {
+   display: grid;
+   grid-row: 1/2;
+>>>>>>> Stashed changes
 
    
 
@@ -213,7 +344,10 @@ button {
 .footerSocial ul
 {
     
+<<<<<<< Updated upstream
     /background-color: black;
+=======
+>>>>>>> Stashed changes
    /* padding-top: 10px;
     padding-bottom: px;*/
     display: flex;
@@ -233,6 +367,180 @@ button {
 }
 @media only screen and (max-width: 600) {
 
+<<<<<<< Updated upstream
+=======
+/*My Skills*/
+.flexContainer button
+{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 40px;
+    margin: 3px;
+}
+
+.flexContainer {
+    display: grid;
+
+}
+
+
+@media (max-width: 600px) {
+    .nav-toggle {
+        display: inline-block;
+        
+    }
+
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 1em;
+   
+    }
+
+    .nav-open .nav {
+        transform: translateX(0);
+       
+     }
+    
+     .nav-open .nav-toggle {
+         position: fixed;
+     }
+    
+     .nav-open .hamburger {
+         transform: rotate(.625turn);
+         background: white;
+     }
+    
+     .nav-open .hamburger::before {
+         transform: rotate(90deg) translateX(-6px);
+         background: white;
+     }
+    
+     .nav-open .hamburger::after{
+         opacity: 0;
+    
+     }
+    
+     .nav {
+         position: fixed;
+         background-color: black;
+         color: #FAF5F4;
+         top: 0;
+         bottom: 0;
+         left: 0;
+         right: 0;
+         z-index: 100;
+    
+         transform: translateX(100%);
+         transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+    
+    
+     }
+    
+     .nav-list {
+         list-style: none;
+         display: flex;
+         height: 100%;
+         flex-direction: column;
+         justify-content: space-evenly;
+         align-items: center;
+         margin: 0;
+         padding: 0;
+         
+    
+     }
+    
+     .nav-link {
+         color: inherit;
+         font-family: var(--ff-secondary);
+        font-size: 28px;
+        font-weight: 400;
+        text-decoration: none;
+     }
+    
+     .nav-link:hover {
+         color: burlywood;
+     }
+    
+     .hamburger {
+         
+         display: block;
+         position: relative;
+     }
+    
+     .hamburger,
+     .hamburger::before,
+     .hamburger::after {
+        background: black;
+        width: 2em;
+        height: 3px;
+        border-radius: 1em;
+        transition: transform 250ms ease-in-out;
+    
+     }
+    
+    
+     .hamburger::before,
+     .hamburger::after {
+         content: '';
+         position: absolute;
+         left: 0;
+         right: 0;
+     }
+    
+     .hamburger::before {top: 6px;}
+     .hamburger::after { bottom: 6px;}
+    
+    
+     .nav-toggle {
+         padding: 1.5em;
+         background: transparent;
+         border: 0;
+         cursor: pointer;
+         position: absolute;
+         right: 1em;
+         top: 1em;
+         z-index: 1000;
+    
+     }
+
+
+
+
+
+.heroContainer {
+    display: grid;
+    grid-template-areas: 
+    "hero text"
+    "hero Img";
+    grid-template-columns: min-content max-content;
+    border: 2px solid #7A836E;
+    border-radius: 1500px 1500px 0px 0px;
+    padding: 8em 3em 3em;
+    justify-content: start;
+    margin: 0 auto;;
+    
+    
+}
+.CTA {
+    padding-top: 15%;
+    text-indent: 12px;
+    text-align: start;
+    ;
+}
+
+.heroTagline {
+    padding-left: 12px;
+
+}
+
+.heroImgContainer {
+    border: none;
+    display: none;
+}
+>>>>>>> Stashed changes
 
 <<<<<<< Updated upstream
 
