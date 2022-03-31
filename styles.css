@@ -96,17 +96,6 @@ p {
 }
  
 
-<<<<<<< Updated upstream
-
-.navigation li {
-    display: inline-block;
-    font-family: var(--ff-secondary);
-    font-size: 28px;
-    font-weight: 400;
-    padding: 5px;
-}
-
-=======
  
 .heroContainer{
     display: grid;
@@ -141,80 +130,22 @@ p {
     padding-bottom: 50px;
     padding-left: 30px;
     padding-right: 20px;
->>>>>>> Stashed changes
 
-/*.CTA 
-{
-    display: flex;
-    justify-content: start;
-}*/
+    /*transform: translate(2%,-90%);*/
 
-button {
-    background-color: black;
-    color: white;
-    padding: 10px;
-}
-
-
-/*.flexbox-container {
-    margin:0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-/*.flebox-item{
-    width: 200px;
-    margin: 10 px;
-}*/
-
-<<<<<<< Updated upstream
-.heroSection {
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
     
 }
 
-.heroRight {
-
-    position: relative;
-    /*display: flex;
-    justify-content: flex-end;*/
-    width: 150%;
-    height: auto;
-    z-index: 0;
-/*background-image: url("Images/Group\ 1.png");
-    background-repeat: no-repeat;
-    background-position: 10% 10%;
-    background-size: 120% 120%;*/
-}
-
-.heroImg {
-    position: absolute;
-    top: 1000px;
-    z-index: 10000;
-    /*display: flex;
-    top: -10000;*/
-}
-
-.imageContainer {
-    display: flex;
+#heroBackground {
+    display: grid;
+    grid-row: 1/2;
+    align-self: center;
+    transform: scale(1.0);
+    top: 5px;
+    left: 500px;
 
 }
 
-.heroLeft {
-
-}
-.heroImg {
-    /*width: 500px;*/
-   /* background-color: black;
-    background-image: url("Images/Group\ 1.png");
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-position: 20%
-    background-size: 200%;*/
-=======
 .heroText {
     padding: 1em;
     line-height: 2.0;
@@ -296,14 +227,9 @@ nav {
 .heroText {
    display: grid;
    grid-row: 1/2;
->>>>>>> Stashed changes
 
-   
 
-    padding-left: 
-    
 }
-
 
 .grid-container {
     display: grid;
@@ -344,10 +270,6 @@ nav {
 .footerSocial ul
 {
     
-<<<<<<< Updated upstream
-    /background-color: black;
-=======
->>>>>>> Stashed changes
    /* padding-top: 10px;
     padding-bottom: px;*/
     display: flex;
@@ -365,10 +287,7 @@ nav {
  text-align: right;
 
 }
-@media only screen and (max-width: 600) {
 
-<<<<<<< Updated upstream
-=======
 /*My Skills*/
 .flexContainer button
 {
@@ -495,7 +414,7 @@ nav {
     
     
      .nav-toggle {
-         padding: 1.5em;
+         padding: .5em;
          background: transparent;
          border: 0;
          cursor: pointer;
@@ -540,10 +459,5 @@ nav {
     border: none;
     display: none;
 }
->>>>>>> Stashed changes
 
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
-}
